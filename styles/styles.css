@@ -1,0 +1,122 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    ---White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-size: 1.4rem;
+    background-color: var(--OffBlack);
+}
+
+h1, p {
+    margin: 0;
+    color: var(---White);
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+.container{
+    max-width: 144rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.card{
+    background-color: var(--DarkGrey);
+    width: 43rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.card-profile{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.card-profile-image {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 10rem;
+}
+
+.card-profile-info{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.card-profile h1{
+    color: var(---White);
+    font-size: 2.7rem;
+    font-weight: 400;
+}
+
+.card-profile h2 {
+    color: var(--Green);
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.card-info{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.social-network a {
+    background-color: var(--Grey);
+    border-radius: .5rem;
+    color: var(---White);
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+}
+
+.social-network:last-child{
+    margin-bottom: 4rem;
+}
+
+.social-network a:hover{
+    background-color: var(--Green);
+    color: var(--OffBlack);
+    cursor: pointer;
+}
+
+.attribution{
+    padding: 2rem 0 1rem 0;
+    color: var(---White);
+}
+
+@media (width <= 375px){
+    
+    .card{
+        width: 90%;
+    }
+
+    .card-info{
+        width: 100%;
+    }
+}
+
+
+
