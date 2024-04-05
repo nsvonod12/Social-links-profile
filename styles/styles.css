@@ -27,19 +27,24 @@ h2{
 }
 
 .container{
+    padding: 10rem 0; 
     max-width: 144rem;
-    display: flex;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
+    align-items: center; */
+    display: grid;
+    place-items: center;
 }
 
 .card{
-    background-color: var(--DarkGrey);
-    width: 43rem;
     height: auto;
+    width: 43rem;
     border-radius: 1rem;
+    background-color: var(--DarkGrey);
 }
 
 .card-profile{
